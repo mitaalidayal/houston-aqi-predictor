@@ -1,0 +1,51 @@
+{
+  "feature_columns": [
+    "temperature",
+    "humidity",
+    "wind_speed",
+    "precipitation",
+    "AQI_lag_1",
+    "AQI_lag_2",
+    "AQI_lag_7",
+    "AQI_diff_1",
+    "AQI_diff_2",
+    "AQI_diff_7",
+    "AQI_rising_1",
+    "AQI_rising_2",
+    "AQI_rising_7",
+    "AQI_momentum_3",
+    "AQI_ma_3",
+    "AQI_ma_7",
+    "AQI_std_7",
+    "temp_x_lowwind",
+    "temperature_lag_1",
+    "humidity_lag_1",
+    "wind_speed_lag_1",
+    "day_of_week",
+    "month",
+    "day_of_year",
+    "is_weekend",
+    "month_sin",
+    "month_cos",
+    "poll_yday_NO2",
+    "poll_yday_Ozone",
+    "poll_yday_PM10",
+    "poll_yday_PM2.5"
+  ],
+  "class_names": [
+    "Good",
+    "Moderate",
+    "USG+"
+  ],
+  "class_descriptions": {
+    "0": "Good (AQI \u2264 50) \u2014 air quality is satisfactory",
+    "1": "Moderate (AQI 51-100) \u2014 acceptable for most",
+    "2": "USG+ (AQI > 100) \u2014 sensitive individuals should reduce exertion"
+  },
+  "threshold": 0.4,
+  "training_date_range": [
+    "2019-01-08",
+    "2024-12-30"
+  ],
+  "n_features": 31
+}
